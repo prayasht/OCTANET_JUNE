@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="todo.js"></script>
+</head>
+<body>
+    <header>
+        <p>To-Do List</p>
+    </header>
+    <div class="main">
+         <div class="container">
+            <div class="todotask">
+                <input type="text" id="getname" placeholder="Enter the task">
+                <button id="taskadd" onclick="addtask()">Add</button>
+                <button id="checked" onclick="checkall()">Check All</button>
+                <button id="unchecked" onclick="uncheckall()">Uncheck all</button>
+                <button id="remove" onclick="removeall()">Remove all</button>
+            </div>
+            <div class="content" id="contain">
+                <!-- to-do task will append here -->
+            </div>
+         </div>
+    </div>
+    
+</body>
+</html>
